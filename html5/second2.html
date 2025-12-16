@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter
+        {
+            color:blueviolet;
+            font-size:80px;
+        }
+        p::selection
+        {
+            background-color:red;
+            color:black
+        }
+        h1::after
+        {
+            content:"⭐";
+        }
+         h1::before
+        {
+            content:"💕";
+        }
+        ol>li::marker{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>learn pseudo element selector ::</h1>
+    <!--
+    ::first-letter
+    ::first-line
+    ::selection
+    ::after
+    ::before
+    ::marker
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam id fugiat sint similique doloremque earum. Aliquid nisi ea, mollitia aperiam harum suscipit debitis voluptatem earum deleniti magni, autem error!</p>
+    <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>java</li>
+        <li>raect</li>
+        <li>node</li>
+    </ol>
+    
+</body>
+</html>

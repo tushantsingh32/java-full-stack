@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a:link{
+        color:green
+    }
+    a:visited{
+        color:aqua
+    }
+    a:active{
+        color:darkgoldenrod
+    }
+    h1:hover{
+        background-color:red;
+    }
+    h1:active{
+        color:royalblue
+    }
+    ul>li:first-child{
+        background-color:blueviolet;
+    }
+    ul>li:last-child{
+        background-color: bisque;
+    }
+    ul>li:nth-child(3)
+    {
+        background-color: cadetblue;
+    }
+    main>div:first-of-type{
+        background-color: chartreuse;
+    }
+     main>div:last-of-type{
+        background-color: chartreuse;
+    }
+     main>div:nth-of-type(2){
+        background-color: chartreuse;
+    }
+</style>
+<body>
+    <h1>learn pseudo class selector</h1>
+    <!--
+    :link
+    :active
+    :visited
+    :hover
+    :first-child
+    :last child
+    :nth child
+    :first-of-type
+    :nth-of-type()
+    -->
+    <a href="https://www.zepto.com">zepto</a>
+    <a href="https://www.flipkart.com">flipkart</a>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>react</li>
+    </ul>
+
+    <main>
+        <section>section1</section>
+        <div>div1</div>
+        <section>section2</section>
+        <div>div2</div>
+        <section>section3</section>
+        <div>div3</div>
+        <section>section4</section>
+        <footer>footer 1</footer>
+    </main>
+</body>
+</html>

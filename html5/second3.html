@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* check for attribute not value */
+        div[name]
+        {
+            background-color:red;
+        }
+        /* check for value in attricbute */
+        div[name="box1"]
+        {
+            background-color: blue;
+        }
+        /*check the content before "-"*/
+        div[name |= "box3"]
+        {
+            background-color:aqua;
+        }
+        div[name="box3-content"]
+        {
+            background-color:aqua;
+        }
+        /* check space seperate */
+        div[name~="text"]
+        {
+            background-color: blueviolet;
+        }
+        div[name~="area"]
+        {
+            background-color: blueviolet;
+        }
+        /* check start */
+        div[name ^= "con"]
+        {
+            background-color: brown;
+        }
+        /* check end */
+         div[name $= "per"]
+        {
+            background-color:greenyellow;
+        }
+        /* check middle */
+         div[name *= "io"]
+        {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo</h1>
+    <div name="box1">Div1</div>
+    <div name="box2">Div2</div>
+    <div name="box3-content">Div3</div>
+    <div name="text area">text area</div>
+    <div name="container">contain</div>
+    <div name="wrapper">wrapper</div>
+    <div name="lion">lion</div>
+    
+</body>
+</html>
