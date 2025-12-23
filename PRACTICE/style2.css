@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+.container
+{
+    height:300px;
+    width:600px;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    /* grid-template-columns: 200px 200px 200px; */
+    row-gap: 20px;
+    /* grid: 20px 20px; */
+}
+.box
+{
+    background-color: aqua;
+    /* height:50px;
+    width:50px; */
+    border:2px solid black;
+    text-align: center;
+}
