@@ -72,7 +72,7 @@ a{
     object-fit: contain;
     object-position:center;
 }
-.card-container{
+/* .card-container{
     height:100vh;
     width:100%;
     border: 2px solid black;
@@ -89,7 +89,7 @@ a{
 {
     /*display:flex;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
     border:2px solid black;
     background-color:white;
     height:80%;
@@ -125,4 +125,47 @@ a{
     
     transform: scale(1.05) translateY(-10px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+} */
+.card2-container{
+    min-height:1i00vh;
+    width:100%;
+    border: 2px solid black;
+    background-color: #f0f0f0; 
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 500px 500px 500px;
+    justify-items: center;
+    align-items: center;
+
+}
+.card{
+    height:400px;
+    width:300px;
+    border:2px solid black;
+    background-color: aqua;
+    margin:10px;
+}
+.item1{
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+.item3{
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+.item4{
+    justify-self: flex-start;
+    align-self: center;
+}
+.item6{
+    justify-self: flex-end;
+}
+.item7{
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+.item9{
+    justify-self: flex-start;
+    align-self: flex-start;
 }
